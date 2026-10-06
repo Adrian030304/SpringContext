@@ -9,5 +9,9 @@ public class Main {
         VoidEntity voidEntity = context.getBean(VoidEntity.class);
         System.out.println(voidEntity.getName());
 
+        var ent = context.getBean("alty", VoidEntity.class);
+        System.out.println(ent.getName());
+
+
     }
 }
