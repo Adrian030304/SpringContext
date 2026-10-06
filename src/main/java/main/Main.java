@@ -12,6 +12,10 @@ public class Main {
         var ent = context.getBean("alty", VoidEntity.class);
         System.out.println(ent.getName());
 
+        var sw = context.getBean(ManSword.class);
+        sw.setStatus("Jumon");
+        System.out.println(sw.getStatus());
+
 
     }
 }
